@@ -16,9 +16,9 @@
     <header>
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-md navbar-light col-10">
+                <nav class="navbar navbar-expand-md navbar-light col-10 d-flex align-items-end">
                     <a class="navbar-brand" href="../index.html"><img src="../IMG/logo/logo-100px.png" alt=""></a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link txcolor" href="../index.html">Home</a>
+                                <a class="nav-link text-white" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#">Colaboradores</a>
@@ -37,21 +37,33 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="col-1 mt-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="../IMG/Icon-login.png" alt="">
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Acessar conta</a></li>
-                            <li><a class="dropdown-item" href="#">Criar conta</a></li>
-                            <li><a class="dropdown-item" href="#">Entre em contato</a></li>
-                        </ul>
+                <!--LOGIN-->
+                <div class="col-1 d-flex align-items-end pb-2">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img
+                            src="../IMG/Icon-login.png" alt=""></button>
+
+                    <div class="offcanvas offcanvas-end canva" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="row p-5">
+                            <button class="btn bt-log">Sua conta</button>
+                            <button class="btn bt-log">Novidades</button>
+                            <button class="btn bt-log">Nova doação</button>
+                            <button class="btn bt-log">Minhas instituições</button>
+                            <button class="btn bt-log">Relatórios</button>
+                            <button class="btn bt-log">Configurações e privacidade</button>
+                            <button class="btn bt-log">Ajuda e suporte</button>
+                            <button class="btn bt-log">Sair</button>
+                        </div>
                     </div>
                 </div>
+                <!--LOGIN-->
             </div>
-
         </div>
     </header>
     <!--BARRA DE NAVEGAÇÃO-->
