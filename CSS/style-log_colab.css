@@ -47,6 +47,7 @@ header {
 
 section{
     overflow-y: auto;
+    min-height: calc(100vh - 665px);
 }
 
 article{
@@ -73,12 +74,18 @@ article{
     border-radius: 10px;
     padding: 10px;
 }
+
+@media screen  and (max-width: 1200px){
+aside{
+    display: none;
+}    
+}
 /*CONTEUDO*/
 
 footer {
     padding: 20px;
     background-color: #B29272;
-    color: #ffffff;
+    color: #ffffff;    
 }
 
 
